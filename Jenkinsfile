@@ -20,7 +20,7 @@ pipeline {
         
         stage('DockerLogin') {
             steps{
-                withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
+                withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'pass', usernameVariable: 'user')]) {
                 sh 'sudo docker login --username dab8106 --password-stdin $pass'
                 }
             }
@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'ansible-playbook create_docker_container.yml'
+                sh 'kubectl apply -f k8s.yml'
             }
         }
     }
