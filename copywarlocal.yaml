@@ -6,5 +6,5 @@
     - 
       copy: 
         dest: /opt/apache-tomcat-8.5.35/webapps
-        src: /webapp/target/webapp.war
+        src: ./webapp/target/webapp.war
       name: "copy jar/war onto tomcat servers"
