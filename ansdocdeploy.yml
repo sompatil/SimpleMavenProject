@@ -5,4 +5,4 @@
   tasks: 
     - 
       name: "create docker container"
-      shell: "docker run -d --name webmagic_demo -p 8080:8080 dab8106/java22082021:latest"
+      shell: "docker run -d --name webmagic_demo -p 8080:8080 dab8106/java27022022:latest"
