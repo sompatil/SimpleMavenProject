@@ -1,1 +1,1 @@
-<h1> Hello, Welcome to WebMagic Informatica Ansible Locally!!!!! </h1>
+<h1>CI using Jenkins, CD using Ansible</h1>
